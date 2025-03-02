@@ -3,21 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Project</title>
+    <title>Connect - Social Media</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Project</h1>
-    </header>
-    
-    <main>
-        <p>This is a basic starter template.</p>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025</p>
-    </footer>
+    <div class="app-container">
+        <!-- Navigation -->
+        <nav class="sidebar">
+            <div class="logo">
+                <h1>Connect</h1>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-compass"></i> Explore</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+                <li><a href="#"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+            </ul>
+            <button class="post-btn">Post</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Stories -->
+            <div class="stories-container">
+                <div class="story add-story">
+                    <div class="story-avatar">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <span>Add Story</span>
+                </div>
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="https://via.placeholder.com/40" alt="User">
+                    </div>
+                    <span>User1</span>
+                </div>
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="https://via.placeholder.com/40" alt="User">
+                    </div>
+                    <span>User2</span>
+                </div>
+                <div class="story">
+                    <div class="story-avatar">
+                        <img src="https://via.placeholder.com/40" alt="User">
+                    </div>
+                    <span>User3</span>
+                </div>
+            </div>
+
+            <!-- Create Post -->
+            <div class="create-post">
+                <div class="post-input">
+                    <img src="https://via.placeholder.com/40" alt="Your profile" class="profile-img">
+                    <input type="text" placeholder="What's happening?">
+                </div>
+                <div class="post-actions">
+                    <button><i class="far fa-image"></i></button>
+                    <button><i class="far fa-smile"></i></button>
+                    <button><i class="fas fa-map-marker-alt"></i></button>
+                    <button class="post">Share</button>
+                </div>
+            </div>
+
+            <!-- Feed -->
+            <div class="feed">
+                <!-- Post Item -->
+                <div class="post-item">
+                    <div class="post-header">
+                        <img src="https://via.placeholder.com/40" alt="User" class="profile-img">
+                        <div class="post-info">
+                            <h4>Jane Doe</h4>
+                            <span class="timestamp">2 hours ago</span>
+                        </div>
+                        <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                    <div class="post-content">
+                        <p>Just launched my new project! So excited to share it with you all.</p>
+                        <img src="https://via.placeholder.com/500x300" alt="Post image" class="post-image">
+                    </div>
+                    <div class="post-stats">
+                        <span><i class="far fa-heart"></i> 124</span>
+                        <span><i class="far fa-comment"></i> 32</span>
+                        <span><i class="far fa-share-square"></i> 8</span>
+                    </div>
+                    <div class="post-actions">
+                        <button><i class="far fa-heart"></i> Like</button>
+                        <button><i class="far fa-comment"></i> Comment</button>
+                        <button><i class="far fa-share-square"></i> Share</button>
+                    </div>
+                </div>
+
+                <!-- Post Item -->
+                <div class="post-item">
+                    <div class="post-header">
+                        <img src="https://via.placeholder.com/40" alt="User" class="profile-img">
+                        <div class="post-info">
+                            <h4>John Smith</h4>
+                            <span class="timestamp">5 hours ago</span>
+                        </div>
+                        <button class="more-options"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                    <div class="post-content">
+                        <p>Beautiful day at the beach!</p>
+                        <img src="https://via.placeholder.com/500x300" alt="Post image" class="post-image">
+                    </div>
+                    <div class="post-stats">
+                        <span><i class="far fa-heart"></i> 236</span>
+                        <span><i class="far fa-comment"></i> 45</span>
+                        <span><i class="far fa-share-square"></i> 12</span>
+                    </div>
+                    <div class="post-actions">
+                        <button><i class="far fa-heart"></i> Like</button>
+                        <button><i class="far fa-comment"></i> Comment</button>
+                        <button><i class="far fa-share-square"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Widgets -->
+        <aside class="widgets">
+            <div class="widget">
+                <h3>Trending Topics</h3>
+                <ul class="trending-list">
+                    <li>
+                        <span class="trend-category">Technology</span>
+                        <h4>#WebDevelopment</h4>
+                        <span class="trend-stats">12.5K posts</span>
+                    </li>
+                    <li>
+                        <span class="trend-category">Entertainment</span>
+                        <h4>#MovieNight</h4>
+                        <span class="trend-stats">8.3K posts</span>
+                    </li>
+                    <li>
+                        <span class="trend-category">Sports</span>
+                        <h4>#Championship</h4>
+                        <span class="trend-stats">5.1K posts</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="widget">
+                <h3>Who to Follow</h3>
+                <ul class="suggestions-list">
+                    <li>
+                        <img src="https://via.placeholder.com/40" alt="User">
+                        <div class="user-info">
+                            <h4>Alex Johnson</h4>
+                            <span>@alexj</span>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/40" alt="User">
+                        <div class="user-info">
+                            <h4>Sarah Williams</h4>
+                            <span>@sarahw</span>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/40" alt="User">
+                        <div class="user-info">
+                            <h4>Mike Davis</h4>
+                            <span>@miked</span>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
